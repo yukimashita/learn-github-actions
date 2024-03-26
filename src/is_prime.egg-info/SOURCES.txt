@@ -1,0 +1,7 @@
+pyproject.toml
+src/prime.py
+src/test_prime.py
+src/is_prime.egg-info/PKG-INFO
+src/is_prime.egg-info/SOURCES.txt
+src/is_prime.egg-info/dependency_links.txt
+src/is_prime.egg-info/top_level.txt

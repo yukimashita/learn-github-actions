@@ -1,0 +1,12 @@
+name: build Python package
+on: [push]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+      - run: pip install pipenv
+      - run: pipenv install --dev
+      - run: pipenv run python -m build
+      - run: echo '----------------------------------------------------------------------'; ls -l dist; echo '----------------------------------------------------------------------'
