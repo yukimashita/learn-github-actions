@@ -5,6 +5,7 @@ venv/
 .pytest_cache/
 dist/
 build/
+*.egg-info/
 *.log
 *~
 \#*
