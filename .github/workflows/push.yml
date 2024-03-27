@@ -1,0 +1,8 @@
+name: handle push event
+on: [push]
+jobs:
+  push-test:
+    uses: ./.github/workflows/pytest.yml
+  push-build:
+    needs: [push-test]
+    uses: ./.github/workflows/build-package.yml
